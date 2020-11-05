@@ -39,6 +39,7 @@ namespace Que1
             Circle c1 = new Circle(2.4);
             Circle c2 = new Circle(5.6);
             Circle c3 = new Circle(1.6);
+            Circle c4 = new Circle();
 
           //  Console.WriteLine(c1.GetRadius());
             Console.WriteLine("The area for circle 1 is " + c1.GetArea());

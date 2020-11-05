@@ -18,7 +18,8 @@ namespace Que6
         public int ID
         {
             get { return id; } // read option for the property
-            set { id = value; } // write option for the property
+       //     set { id = value; } // write option for the property
+       // The ID property has become read-only since set was removed
         }
 
         public int Age
@@ -43,6 +44,20 @@ namespace Que6
         {
             get { return favColour; } // read option for the property
             set { favColour = value; } // write option for the property
+        }
+
+        public Person(int id)
+        {
+            this.id = id;
+        }
+
+        public Person(int id, string name, int age, string locality, string favColour)
+        {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+            this.locality = locality;
+            this.favColour = favColour;
         }
 
         public int GetID()

@@ -16,6 +16,11 @@ namespace Que1
          * It has no return type (void) and no parameters (no values between brackets).
          */
 
+        public Circle() : this(1)
+        {
+           // this.radius = 1;
+        }
+
         public Circle(double radius)
         {
             this.radius = radius;

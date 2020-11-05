@@ -10,6 +10,7 @@ namespace Que2
     {
         static void Main(string[] args)
         {
+            /* Que2
             Rectangle rect1 = new Rectangle();
             Rectangle rect2 = new Rectangle();
             Rectangle rect3 = new Rectangle();
@@ -22,7 +23,7 @@ namespace Que2
              * So method() will be converted to the returned value and the returned value will be saved
              * in the variable
              */
-
+            /*
             rect1.length = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Please enter the width for rectangle 1: ");
@@ -49,6 +50,24 @@ namespace Que2
 
             Console.Write("Please enter the width for rectangle 3: ");
             rect3.width = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Rectangle 3's details:");
+            rect3.CalculateArea();
+            rect3.CalculatePerimeter();
+        */
+            /* Que 9
+             */
+            Rectangle rect1 = new Rectangle(3.4, 6.8);
+            Rectangle rect2 = new Rectangle(5.5, 2.3);
+            Rectangle rect3 = new Rectangle(1.7, 3.9);
+
+            Console.WriteLine("Rectangle 1's details:");
+            rect1.CalculateArea();
+            rect1.CalculatePerimeter();
+
+            Console.WriteLine("Rectangle 2's details:");
+            rect2.CalculateArea();
+            rect2.CalculatePerimeter();
 
             Console.WriteLine("Rectangle 3's details:");
             rect3.CalculateArea();

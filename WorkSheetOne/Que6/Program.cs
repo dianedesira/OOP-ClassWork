@@ -10,20 +10,21 @@ namespace Que6
     {
         static void Main(string[] args)
         {
-            Person p1 = new Person();
-            Person p2 = new Person();
+            Person p1 = new Person(23399);
+            Person p2 = new Person(457790, "Mark", 30, "Marsaxlokk", "Purple");
 
-            p1.ID = 23399;
+            //p1.ID = 23399;
             p1.Age = 21;
             p1.FavColour = "Yellow";
             p1.Name = "Amy";
             p1.Locality = "Naxxar";
 
-            p2.ID = 457790;
+            /*p2.ID = 457790;
             p2.Age = 30;
             p2.FavColour = "Purple";
             p2.Name = "Mark";
             p2.Locality = "Marsaxlokk";
+            */
 
             Person[] persons = new Person[2];
             persons[0] = p1;
