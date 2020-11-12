@@ -8,7 +8,6 @@ namespace Felidae
 {
     class Felidae
     {
-
         bool male;
 
         public bool Male
@@ -20,6 +19,13 @@ namespace Felidae
         public Felidae() : this(true)
         {
         }
+
+        /* The above constructor is the same as if we did the following
+         * public Felidae()
+         * {
+         *      male = true;
+         * }
+         */
 
         public Felidae(bool male)
         {

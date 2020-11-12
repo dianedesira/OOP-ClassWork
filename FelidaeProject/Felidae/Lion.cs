@@ -20,5 +20,7 @@ namespace Felidae
         {
             this.weight = weight;
         }
+
+ 
     }
 }

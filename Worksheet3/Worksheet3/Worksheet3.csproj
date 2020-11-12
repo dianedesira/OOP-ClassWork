@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CB23A0E-4EE7-4595-9F09-E3C1A73F7560}</ProjectGuid>
+    <ProjectGuid>{94AD2F49-A79A-4DD3-9B75-00FE9F24C403}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Felidae</RootNamespace>
-    <AssemblyName>Felidae</AssemblyName>
+    <RootNamespace>Worksheet3</RootNamespace>
+    <AssemblyName>Worksheet3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AfricanLion.cs" />
-    <Compile Include="Felidae.cs" />
-    <Compile Include="Lion.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Magazine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
