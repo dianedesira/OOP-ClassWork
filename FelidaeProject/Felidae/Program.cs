@@ -11,9 +11,9 @@ namespace Felidae
     {
         static void Main(string[] args)
         {
-            Felidae cat1 = new Felidae();
-            Felidae cat2 = new Felidae(false);
-            Felidae cat3 = new Felidae(true);
+            Felidae cat1 = new Lion(false, 65);//new Felidae();
+            Felidae cat2 = new AfricanLion(true, 150);//new Felidae(false);
+            Felidae cat3 = new Lion(false, 200);//new Felidae(true);
 
             Console.WriteLine("Cat 1's gender is " + cat1.Male);
             Console.WriteLine("Cat 2's gender is " + cat2.Male);

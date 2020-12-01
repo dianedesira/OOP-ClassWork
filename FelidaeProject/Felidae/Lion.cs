@@ -21,6 +21,14 @@ namespace Felidae
             this.weight = weight;
         }
 
- 
+        protected string Ambush()
+        {
+            return "Attack now!";
+        }
+
+        public override string CatchPrey()
+        {
+            return base.Hide() + "\n" + this.Ambush() + "\n" + base.Run();
+        }
     }
 }

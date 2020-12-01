@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Felidae
 {
-    class Felidae
+    abstract class Felidae
     {
         bool male;
 
@@ -31,5 +31,17 @@ namespace Felidae
         {
             this.male = male;
         }
+
+        protected string Hide()
+        {
+            return "Find a big bush and hide!";
+        }
+
+        protected string Run()
+        {
+            return "Run as fast as you can!";
+        }
+
+        public abstract string CatchPrey();
     }
 }
