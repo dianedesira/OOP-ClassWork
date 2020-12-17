@@ -10,15 +10,15 @@ namespace Que1
     {
         static void Main(string[] args)
         {
-            Animal animal1 = new Animal();
+           // Animal animal1 = new Animal();
             Dog animal2 = new Dog();
             Cat animal3 = new Cat();
             Duck animal4 = new Duck();
 
             List<Animal> animals = new List<Animal>();
             //animals.Add(animal1); animals.Add(animal2); animals.Add(animal3); animals.Add(animal4);
-            animals.AddRange(new List<Animal> { animal1, animal2, animal3, animal4, new Bird(), new Cow(), new Duck(), new Fish(), new Frog(), new Lion(), new Snake() });
-            Console.WriteLine("All Animals");
+            animals.AddRange(new List<Animal> { animal2, animal3, animal4, new Bird(), new Cow(), new Duck(), new Fish(), new Frog(), new Lion(), new Snake() });
+            /*Console.WriteLine("All Animals");
             foreach (Animal animal in animals)
             {
                 // string noiseReturn = animal.Speak();
@@ -27,6 +27,26 @@ namespace Que1
                 Console.WriteLine("Noise: " + animal.Speak());
                 Console.WriteLine("Movement: "+animal.Move());
                 Console.WriteLine("Eat: "+animal.Eat());
+            }
+            */
+
+            Console.WriteLine("All Animals and their basic info:\n");
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.PrintInformation());
+            }
+
+            Farmer mainFarmer = new Farmer();
+            List<IEat> allTypesWhichCanEat = new List<IEat>();
+            allTypesWhichCanEat.Add(mainFarmer); allTypesWhichCanEat.AddRange(animals);
+
+
+            Console.WriteLine("\nLunch Time =)");
+            foreach (IEat eatingObject in allTypesWhichCanEat)
+            {
+                Console.WriteLine("\nObject: " + eatingObject.GetType().Name);
+                Console.WriteLine(eatingObject.PrepareFood());
+                Console.WriteLine(eatingObject.Eat());
             }
 
             Console.ReadKey();

@@ -10,7 +10,7 @@ namespace Que1
     {
         public override string Speak()
         {
-            return base.Speak() + " Quack Quack!";
+            return " Quack Quack!";
         }
 
         /*  public override string Speak()
@@ -20,7 +20,7 @@ namespace Que1
 
         public override string Eat()
         {
-            return base.Eat() + " pond weed and insects!";
+            return " pond weed and insects!";
         }
 
         public override string Move()

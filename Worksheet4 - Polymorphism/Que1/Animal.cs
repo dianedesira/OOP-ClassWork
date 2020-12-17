@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Que1
 {
-    class Animal
+    abstract class Animal : IEat
     {
-        public virtual string Speak()
-        {
-            return "Hello!";
-        }
+        public abstract string Speak();
 
         /*
          *public virtual string Speak()
@@ -25,9 +22,15 @@ namespace Que1
             return "Animal moving";
         }
 
-        public virtual string Eat()
+        public abstract string Eat();
+        public string PrepareFood() // considering as if all of these animals are in a farm
         {
-            return "Animal eating";
+            return "Farmer preparing this animal's food";
+        }
+
+        public string PrintInformation()
+        {
+            return "The Animal " + GetType().Name + " makes this sound: " + Speak();
         }
     }
 }
