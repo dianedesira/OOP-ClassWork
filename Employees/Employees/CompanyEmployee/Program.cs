@@ -36,6 +36,8 @@ namespace CompanyEmployee
             Console.WriteLine("==============");
             Console.WriteLine(boeing.ShowPayroll());
 
+            Console.WriteLine("Airbus Brand's Primary colour: " + airbus.Brand.PrimaryColour);
+
             Console.ReadKey();
         }
     }
